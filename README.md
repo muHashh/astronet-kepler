@@ -1,6 +1,6 @@
-# Exoplanet ML
+# Exoplanet ML 
 
-Machine learning models and utilities for exoplanet science.
+Machine learning models and utilities for exoplanet science. This repo was ran on AMD's ROCm. Using the following docker image: [rocm/tensorflow:rocm4.0.1-tf1.15-dev](https://hub.docker.com/layers/rocm/tensorflow/rocm4.0.1-tf1.15-dev/images/sha256-2cbb5e6fdfb86120e900b60d1001f87c4ac04cb1bc27ce4ab43bd59186352b36?context=explore).
 
 ## Code Author
 
@@ -63,7 +63,7 @@ Verify that all dependencies are satisfied by running the unit tests:
 
 ```bash
 cd exoplanet-ml  # Bazel must run from a directory with a WORKSPACE file
-bazel test astronet/... astrowavenet/... light_curve/... tf_util/... third_party/...
+bazel test astronet/... astrowavenet/... light_curve/... tf_util/... third_party/... --test_arg=--test_srcdir=/root/exoplanet-ml/exoplanet-ml/
 ```
 
 # Citation
